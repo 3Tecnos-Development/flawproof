@@ -18,7 +18,3 @@ Install via NPM:
 npm install flawproof
 
 ```
-
-## Usage
-
-#### TypeScript
