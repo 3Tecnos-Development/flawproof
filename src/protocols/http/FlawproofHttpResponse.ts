@@ -1,7 +1,7 @@
-import { ValidationError } from "class-validator";
 import { HttpStatusCode } from "../../enums/HttpStatusCode";
 import { IFlawproof } from "../../interfaces/IFlawproof";
 import { ErrorType } from "../../types/ErrorType";
+import { ValidationError } from "../validation/ValidationError";
 import { IHttpResponse } from "./IHttpResponse";
 
 export class FlawproofHttpResponse {
