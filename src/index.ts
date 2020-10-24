@@ -4,6 +4,7 @@ import { HttpStatusCode } from "./enums/HttpStatusCode";
 import { Flawproof } from "./Flawproof";
 import { IFlawproof } from "./interfaces/IFlawproof";
 import { ErrorType } from "./types/ErrorType";
+import { ValidationError } from "./protocols/validation/ValidationError";
 
 export {
   Flawproof,
@@ -12,4 +13,5 @@ export {
   ErrorType,
   HttpStatusCode,
   IHttpResponse,
+  ValidationError,
 };
