@@ -8,7 +8,7 @@ export class FlawproofHttpResponse {
   static success(message: object): IHttpResponse {
     return {
       statusCode: 200,
-      body: JSON.stringify(message),
+      body: message,
     };
   }
 
@@ -25,7 +25,7 @@ export class FlawproofHttpResponse {
     } as IFlawproof;
     return {
       statusCode: flawproof.statusCode,
-      body: JSON.stringify(flawproof),
+      body: flawproof,
     };
   }
 
@@ -40,7 +40,7 @@ export class FlawproofHttpResponse {
     } as IFlawproof;
     return {
       statusCode: flawproof.statusCode,
-      body: JSON.stringify(flawproof),
+      body: flawproof,
     };
   }
 }
