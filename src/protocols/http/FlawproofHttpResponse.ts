@@ -5,7 +5,7 @@ import { ValidationError } from "../validation/ValidationError";
 import { IHttpResponse } from "./IHttpResponse";
 
 export class FlawproofHttpResponse {
-  static success(message: object): IHttpResponse {
+  static success(message?: object): IHttpResponse {
     return {
       statusCode: 200,
       body: message,
