@@ -15,10 +15,11 @@ export class FlawproofHttpResponse {
   static error(
     errorType: ErrorType,
     description: string,
-    validationErrors?: ValidationError[]
+    validationErrors?: ValidationError[],
+    statusCode?: HttpStatusCode
   ): IHttpResponse {
     const flawproof = {
-      statusCode: HttpStatusCode.BAD_REQUEST,
+      statusCode: statusCode || HttpStatusCode.BAD_REQUEST,
       description,
       errorType,
       validationErrors,
