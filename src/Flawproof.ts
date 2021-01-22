@@ -23,6 +23,7 @@ export class Flawproof extends BaseError implements IFlawproof {
     validationErrors?: ValidationError[]
   ) {
     super(description);
+
     this.statusCode = httpCode;
     this.errorType = errorType;
     this.description = description;
